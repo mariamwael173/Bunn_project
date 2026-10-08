@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bunn | Specialty Coffee Roasters (Demo Website)</title>
+  <meta name="description" content="Bunn is a demo website for a specialty coffee roaster: responsive layout, interactive menu, and a validated contact form.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container bar">
+      <a class="logo" href="#top" aria-label="Bunn home"><span class="logo-mark" aria-hidden="true"></span>Bunn</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="siteNav" aria-label="Main">
+        <a href="#story">Our story</a>
+        <a href="#menu">Menu</a>
+        <a href="#why">Why Bunn</a>
+        <a href="#visit">Visit</a>
+        <a class="btn btn-small" href="#visit">Book a table</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Small-batch coffee roasters</p>
+          <h1>Roasted slow.<br>Poured with care.</h1>
+          <p class="lead">Single-origin beans, roasted fresh every morning and brewed the way they were meant to taste.</p>
+          <div class="actions">
+            <a class="btn" href="#menu">See the menu</a>
+            <a class="btn btn-ghost" href="#visit">Visit us</a>
+          </div>
+        </div>
+        <div class="hero-art reveal" aria-hidden="true">
+          <svg viewBox="0 0 320 320" class="cup">
+            <circle cx="160" cy="170" r="140" class="cup-bg"/>
+            <path class="steam s1" d="M120 92c-14-18 14-30 0-48"/>
+            <path class="steam s2" d="M160 86c-14-18 14-30 0-48"/>
+            <path class="steam s3" d="M200 92c-14-18 14-30 0-48"/>
+            <path class="cup-body" d="M76 120h168v62c0 44-34 78-84 78s-84-34-84-78z"/>
+            <path class="cup-handle" d="M244 140h14a28 28 0 0 1 0 56h-20" fill="none"/>
+            <ellipse class="cup-top" cx="160" cy="120" rx="84" ry="14"/>
+            <ellipse class="cup-coffee" cx="160" cy="121" rx="72" ry="9"/>
+            <ellipse class="cup-saucer" cx="160" cy="268" rx="112" ry="14"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="story">
+      <div class="container split">
+        <div class="reveal">
+          <p class="eyebrow">Our story</p>
+          <h2>From the farm to your cup, with nothing in between.</h2>
+        </div>
+        <div class="reveal">
+          <p>Bunn started with a simple idea: coffee should taste like where it came from. We buy directly from small farms, roast in small batches, and serve every cup within days of roasting.</p>
+          <p>Whether you stop by for a quick espresso or stay for the afternoon, we want the table to feel like yours.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="menu">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Menu</p>
+          <h2>Something for every mood</h2>
+        </div>
+        <div class="tabs reveal" role="group" aria-label="Filter menu">
+          <button class="tab is-active" data-filter="all" aria-pressed="true">All</button>
+          <button class="tab" data-filter="hot" aria-pressed="false">Hot</button>
+          <button class="tab" data-filter="cold" aria-pressed="false">Cold</button>
+          <button class="tab" data-filter="bakery" aria-pressed="false">Bakery</button>
+        </div>
+        <div class="menu-grid" id="menuGrid">
+          <article class="item" data-cat="hot"><div><h3>Espresso</h3><p>Double shot, chocolate and orange notes.</p></div><span class="price">55</span></article>
+          <article class="item" data-cat="hot"><div><h3>Flat White</h3><p>Velvety milk over a ristretto base.</p></div><span class="price">80</span></article>
+          <article class="item" data-cat="hot"><div><h3>Cardamom Latte</h3><p>Our house spiced latte with fresh cardamom.</p></div><span class="price">90</span></article>
+          <article class="item" data-cat="cold"><div><h3>Cold Brew</h3><p>Steeped for 18 hours, served over ice.</p></div><span class="price">85</span></article>
+          <article class="item" data-cat="cold"><div><h3>Iced Spanish Latte</h3><p>Sweet, creamy and bold.</p></div><span class="price">95</span></article>
+          <article class="item" data-cat="cold"><div><h3>Orange Tonic</h3><p>Espresso, tonic and fresh orange.</p></div><span class="price">90</span></article>
+          <article class="item" data-cat="bakery"><div><h3>Butter Croissant</h3><p>Baked every morning.</p></div><span class="price">60</span></article>
+          <article class="item" data-cat="bakery"><div><h3>Date and Walnut Cake</h3><p>Moist, lightly sweet, great with a flat white.</p></div><span class="price">75</span></article>
+        </div>
+        <p class="fineprint">Prices in EGP. Demo content.</p>
+      </div>
+    </section>
+
+    <section class="section" id="why">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Why Bunn</p>
+          <h2>Three things we never compromise on</h2>
+        </div>
+        <div class="cards">
+          <article class="card reveal"><span class="num">01</span><h3>Fresh roasted</h3><p>Beans are roasted in small batches and served within days.</p></article>
+          <article class="card reveal"><span class="num">02</span><h3>Directly sourced</h3><p>We know our farmers by name and pay them fairly.</p></article>
+          <article class="card reveal"><span class="num">03</span><h3>Brewed with care</h3><p>Every drink is dialed in by a trained barista.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="visit">
+      <div class="container split">
+        <div class="reveal">
+          <p class="eyebrow">Visit</p>
+          <h2>Come say hello</h2>
+          <dl class="info">
+            <div><dt>Address</dt><dd>12 Example Street, Cairo</dd></div>
+            <div><dt>Hours</dt><dd>Daily, 8 AM to 11 PM</dd></div>
+            <div><dt>Phone</dt><dd>+20 000 000 0000</dd></div>
+          </dl>
+        </div>
+        <form class="form reveal" id="contactForm" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+          <span class="error" data-for="name"></span>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+          <span class="error" data-for="email"></span>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <span class="error" data-for="message"></span>
+          <button class="btn" type="submit">Send message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot">
+      <span>&copy; <span id="year">2026</span> Bunn. Demo website.</span>
+      <span>Designed and built by Mariam Wael</span>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+</body>
+</html>
